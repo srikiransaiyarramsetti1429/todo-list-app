@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moderate To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Enter task" required />
+      <select id="priority">
+        <option value="Low">Low 🔵</option>
+        <option value="Medium">Medium 🟡</option>
+        <option value="High">High 🔴</option>
+      </select>
+      <input type="date" id="due-date" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="filters">
+      <label>Filter:</label>
+      <select id="filter-priority">
+        <option value="All">All</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    
